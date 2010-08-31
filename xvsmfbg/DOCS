@@ -1,0 +1,31 @@
+
+  Written by Peter Schmidt-Nielsen
+Copyleft, 2010. All wrongs reserved.
+        (Public domain)
+
+
+xvsmfbg: X virtual shared memory frame buffer grabber
+
+xvsmfbg is designed to grab frames from Xvfb, and spit them at a fixed rate to stdout.
+
+Typical compilation:
+
+	g++ xvsmfbg.cpp -o xvsmfbg
+
+Typical invocation:
+
+	Xvfb :1 -screen 0 480x240x8 -shmem | ./xvsmfbg | somewhere
+
+To test out xvsmfbg without an actual serial port, compile the code in emulator/, then run:
+
+	Xvfb :1 -screen 0 480x240x8 -shmem | ./xvsmfbg | emulator/tc_emulator
+	DISPLAY=:1 mplayer -fs some_video.m4a
+
+... Or anything else that will use an x server.
+
+If you are on a fresh Ubuntu (or equivalent Debian) install, you will need the following packages to compile stuff:
+
+	sudo apt-get install build-essential libsdl-dev
+
+All makefiles included should work file for compilation.
+
