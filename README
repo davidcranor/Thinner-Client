@@ -2,6 +2,41 @@ This project implements an STM32F based thin client which can send and receive d
 
 The included main.c implements a vt100 serial terminal with 80x24 characters.  Tools are also included to upload vial the STM32F's build in bootloader and an FTDI cable.
 
+In order to make it work (and if you are using bash and Ubuntu)
+
+paste the following into /etc/init/ttyUSB0.conf:
+
+******************************************************************
+
+start on stopped rc RUNLEVEL=[2345]
+stop on runlevel [!2345]
+
+respawn
+exec /sbin/getty -L 57600 ttyUSB0 vt100
+
+******************************************************************
+
+Now you can start and stop the ttyUSB0 login process
+
+using sudo [start, stop] ttyUSB0
+
+Put this in your /etc/bash.bashrc to actually give the serial port the login process:
+
+******************************************************************
+
+if [ "$TERM" == "vt100" ]; then
+       export TERM=xterm
+       export ROWS=25
+       export COLUMNS=80
+       export LANG=POSIX
+       # Redundant settings, for other folks
+       export LINES=$ROWS
+       stty rows $ROWS
+       stty cols $COLUMNS
+fi
+
+******************************************************************
+
 The board is designed so that the top layer can be made at home, with some easy drillable/solderable vias to a ground plane on the back side.  The SD card slot is the only thing on the bottom of the 2 layer design, and is not important at this point (it isn't even supported in the code yet, and isn't included on the BOM).
 
 If you want to write your own NTSC display stuff using this project, all you have to do (assuming you already have the arm toolchain) is make a main.c which includes the following:
@@ -35,7 +70,7 @@ xvsmfbg stands for X virtual shared memory frame buffer grabber. It is designed 
 
 You can use it to send frames from your computer to a thinner client and display them on a TV.  The code to implement this is not currently in this repo, but it should be pretty simple to write - just read stuff out of the serial buffer and put into the frame buffer. 
 
-
+******************************************************************
 
 
 David Cranor
