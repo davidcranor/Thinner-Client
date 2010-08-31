@@ -1,0 +1,201 @@
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:15:23: error: stm32f10x.h: No such file or directory
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:16:28: error: stm32f10x_exti.h: No such file or directory
+In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:18:
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_TimeBaseStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_OCInitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NVIC_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'SPI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DMA_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'USART_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:50: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'key_buf_size'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'buffer_get_key'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'buf_dequeue'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:56: error: expected ')' before 'c'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'buf_size'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:60: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'frameBuffer'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:62: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'bufhead'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'buftail'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_TimeBaseStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_OCInitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NVIC_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'SPI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DMA_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'USART_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'RCC_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:204: warning: implicit declaration of function 'RCC_APB1PeriphClockCmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:204: error: 'RCC_APB1Periph_TIM2' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:204: error: (Each undeclared identifier is reported only once
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:204: error: for each function it appears in.)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:204: error: 'RCC_APB1Periph_TIM4' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:204: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:205: warning: implicit declaration of function 'RCC_APB2PeriphClockCmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:205: error: 'RCC_APB2Periph_GPIOA' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:205: error: 'RCC_APB2Periph_GPIOB' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:205: error: 'RCC_APB2Periph_SPI1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:205: error: 'RCC_APB2Periph_AFIO' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:206: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:206: error: 'RCC_AHBPeriph_DMA1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:207: error: 'RCC_APB2Periph_USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'GPIO_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:213: error: 'GPIO_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:213: error: 'GPIO_Pin_1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:213: error: 'GPIO_Pin_7' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:213: error: 'GPIO_Pin_5' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:214: error: 'GPIO_Mode_AF_PP' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:215: error: 'GPIO_Speed_50MHz' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:217: warning: implicit declaration of function 'GPIO_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:217: error: 'GPIOA' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:219: error: 'GPIO_Pin_3' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:219: error: 'GPIO_Pin_4' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:219: error: 'GPIO_Pin_0' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:220: error: 'GPIO_Mode_Out_PP' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:225: error: 'GPIO_Pin_8' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:225: error: 'GPIO_Pin_11' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:226: error: 'GPIO_Mode_IN_FLOATING' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:230: warning: implicit declaration of function 'GPIO_EXTILineConfig'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:230: error: 'GPIO_PortSourceGPIOA' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:230: error: 'GPIO_PinSource8' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:234: error: 'GPIO_Pin_10' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:240: error: 'GPIO_Pin_9' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'TIM_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:252: error: 'TIM_TimeBaseStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:255: error: 'TIM_CounterMode_Up' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:257: warning: implicit declaration of function 'TIM_TimeBaseInit'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:257: error: 'TIM2' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:260: error: 'TIM_OCInitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:260: error: 'TIM_OCMode_PWM1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:261: error: 'TIM_OutputState_Enable' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:263: error: 'TIM_OCPolarity_Low' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:265: warning: implicit declaration of function 'TIM_OC2Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:267: warning: implicit declaration of function 'TIM_OC2PreloadConfig'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:267: error: 'TIM_OCPreload_Enable' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:269: error: 'TIM_OCMode_Timing' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:272: warning: implicit declaration of function 'TIM_OC1Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:274: warning: implicit declaration of function 'TIM_OC1PreloadConfig'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:277: warning: implicit declaration of function 'TIM_ITConfig'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:277: error: 'TIM_IT_CC1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:277: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:280: warning: implicit declaration of function 'TIM_Cmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'NVIC_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:286: error: 'NVIC_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:286: error: 'EXTI9_5_IRQn' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:288: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:290: warning: implicit declaration of function 'NVIC_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:293: error: 'TIM2_IRQn' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:300: error: 'USART1_IRQn' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'SPI_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:310: error: 'SPI_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:310: error: 'SPI_Direction_2Lines_FullDuplex' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:311: error: 'SPI_Mode_Master' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:312: error: 'SPI_DataSize_16b' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:313: error: 'SPI_CPOL_Low' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:314: error: 'SPI_CPHA_2Edge' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:315: error: 'SPI_NSS_Soft' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:316: error: 'SPI_BaudRatePrescaler_8' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:317: error: 'SPI_FirstBit_MSB' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:319: warning: implicit declaration of function 'SPI_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:319: error: 'SPI1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:321: warning: implicit declaration of function 'SPI_Cmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:321: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'DMA_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:328: warning: implicit declaration of function 'DMA_DeInit'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:328: error: 'DMA1_Channel3' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:329: error: 'DMA_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:330: warning: cast from pointer to integer of different size
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:331: error: 'DMA_DIR_PeripheralDST' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:332: error: 'DMA_Priority_Low' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:335: error: 'DMA_PeripheralInc_Disable' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:336: error: 'DMA_MemoryInc_Enable' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:337: error: 'DMA_PeripheralDataSize_HalfWord' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:338: error: 'DMA_MemoryDataSize_HalfWord' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:339: error: 'DMA_Mode_Normal' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:340: error: 'DMA_M2M_Disable' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:342: warning: implicit declaration of function 'DMA_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'USART_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:349: error: 'USART_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:350: error: 'USART_WordLength_8b' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:351: error: 'USART_StopBits_1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:352: error: 'USART_Parity_No' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:353: error: 'USART_HardwareFlowControl_None' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:354: error: 'USART_Mode_Rx' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:354: error: 'USART_Mode_Tx' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:356: warning: implicit declaration of function 'USART_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:356: error: 'USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:359: warning: implicit declaration of function 'USART_ITConfig'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:359: error: 'USART_IT_RXNE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:359: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:362: warning: implicit declaration of function 'USART_Cmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'EXTI_Config':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:369: error: 'EXTI_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:369: error: 'EXTI_Line8' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:370: error: 'EXTI_Mode_Interrupt' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:371: error: 'EXTI_Trigger_Rising' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:372: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:374: warning: implicit declaration of function 'EXTI_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'EXTI9_5_IRQHandler':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:380: warning: implicit declaration of function 'EXTI_ClearFlag'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:380: error: 'EXTI_Line8' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:385: warning: implicit declaration of function 'GPIO_ReadInputDataBit'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:385: error: 'GPIOA' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:385: error: 'GPIO_Pin_11' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'USART1_IRQHandler':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:400: warning: implicit declaration of function 'USART_GetITStatus'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:400: error: 'USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:400: error: 'USART_IT_RXNE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:400: error: 'RESET' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:402: warning: implicit declaration of function 'GPIO_ResetBits'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:402: error: 'GPIOA' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:402: error: 'GPIO_Pin_0' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:403: warning: implicit declaration of function 'buf_enqueue'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:403: warning: implicit declaration of function 'USART_ReceiveData'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:404: warning: implicit declaration of function 'USART_ClearFlag'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:404: error: 'USART_FLAG_RXNE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'TIM2_IRQHandler':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:412: warning: implicit declaration of function 'TIM_ClearITPendingBit'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:412: error: 'TIM2' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:412: error: 'TIM_IT_CC1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:418: error: 'DMA1_Channel3' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:419: error: 'DMA_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:419: warning: cast from pointer to integer of different size
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:421: warning: implicit declaration of function 'SPI_I2S_DMACmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:421: error: 'SPI1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:421: error: 'SPI_I2S_DMAReq_Tx' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:421: error: 'ENABLE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:422: warning: implicit declaration of function 'DMA_Cmd'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:428: warning: implicit declaration of function 'TIM_SetCompare2'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:508:21: error: invalid suffix "b1100" on integer constant
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:510:21: error: invalid suffix "b0011" on integer constant
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: At top level:
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:558: warning: conflicting types for 'buf_enqueue'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:403: warning: previous implicit declaration of 'buf_enqueue' was here
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c: In function 'overclockSystemInit':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:598: error: 'RCC' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:632: error: '__IO' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:632: error: expected ';' before 'uint32_t'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:636: error: 'RCC_CR_HSEON' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:641: error: 'HSEStatus' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:641: error: 'RCC_CR_HSERDY' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:642: error: 'StartUpCounter' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:643: error: 'HSEStartUp_TimeOut' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:645: error: 'RESET' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:657: error: 'FLASH' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:657: error: 'FLASH_ACR_PRFTBE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:660: error: 'FLASH_ACR_LATENCY' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:661: error: 'FLASH_ACR_LATENCY_2' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:665: error: 'RCC_CFGR_HPRE_DIV1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:668: error: 'RCC_CFGR_PPRE2_DIV1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:671: error: 'RCC_CFGR_PPRE1_DIV2' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:697: error: 'RCC_CFGR_PLLSRC' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:697: error: 'RCC_CFGR_PLLXTPRE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:698: error: 'RCC_CFGR_PLLMULL' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:699: error: 'RCC_CFGR_PLLSRC_HSE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:699: error: 'RCC_CFGR_PLLMULL10' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:703: error: 'RCC_CR_PLLON' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:706: error: 'RCC_CR_PLLRDY' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:711: error: 'RCC_CFGR_SW' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:712: error: 'RCC_CFGR_SW_PLL' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.c:715: error: 'RCC_CFGR_SWS' undeclared (first use in this function)

@@ -335,7 +335,7 @@ if __name__ == "__main__":
         pass
 
     conf = {
-            'port': '/dev/tty.usbserial-FTF0GMSJ',
+            'port': '/dev/tty.usbserial-FTF0GPYL',
             'baud': 115200,
             'address': 0x08000000,
             'erase': 0,

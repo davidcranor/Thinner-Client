@@ -11,34 +11,6 @@
  * license for commercial sale available from MIT.
  */
 
-
-
-/*********************************************************************************************
- 
- 
- Hey kids at home who want to write your own NTSC display stuff using this project!
- All you have to do (assuming you already have the arm toolchain and ST's peripheral library) 
- is make a main.c which includes the following:
- 
- stm32f10x.h
- stm32f10x_exti.h
- thinnerclient.h
- 
- as well as a call to thinnerClientSetup();
- 
- and you have access to the following constructs:
- 
- frameBuffer[BUFFER_VERT_SIZE][BUFFER_LINE_LENGTH];
- uint8_t buffer_get_key()
- uint8_t buf_dequeue()
- 
- anything written to frameBuffer appears on the screen.
- buffer_get_key and buf_dequeue retrieve bytes from the keyboard buffer and USART receive buffer, respectively.
- 
- check out thinnerclient.h and thinnerclient.c for details.
- 
-**********************************************************************************************/
-
 #include "stm32f10x.h"
 #include "stm32f10x_exti.h"
 

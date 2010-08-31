@@ -1,0 +1,28 @@
+In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/video.h:21,
+                 from /Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:17:
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:19:23: error: stm32f10x.h: No such file or directory
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:20:28: error: stm32f10x_exti.h: No such file or directory
+In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/video.h:21,
+                 from /Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:17:
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_TimeBaseStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_OCInitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NVIC_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'SPI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DMA_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'USART_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c: In function 'uart_update':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:105: error: 'USART_InitStructure' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:105: error: (Each undeclared identifier is reported only once
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:105: error: for each function it appears in.)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:110: warning: implicit declaration of function 'USART_Init'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:110: error: 'USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c: In function 'uart_putchar':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:115: warning: implicit declaration of function 'USART_SendData'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:115: error: 'USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c: In function 'send_special_key':
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:469: warning: implicit declaration of function 'USART_GetFlagStatus'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:469: error: 'USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:469: error: 'USART_FLAG_TXE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/terminal.c:469: error: 'RESET' undeclared (first use in this function)

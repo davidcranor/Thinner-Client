@@ -1,7 +1,7 @@
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:42:23: error: stm32f10x.h: No such file or directory
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:43:28: error: stm32f10x_exti.h: No such file or directory
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:14:23: error: stm32f10x.h: No such file or directory
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:15:28: error: stm32f10x_exti.h: No such file or directory
 In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/video.h:21,
-                 from /Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:45:
+                 from /Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:17:
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_InitStructure'
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_TimeBaseStructure'
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_OCInitStructure'
@@ -18,7 +18,7 @@ In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/vide
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:60: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'frameBuffer'
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:62: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'bufhead'
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'buftail'
-In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:49:
+In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:21:
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/Font6x8.h:18:1: error: invalid suffix "b00000000" on integer constant
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/Font6x8.h:19:1: error: invalid suffix "b00000000" on integer constant
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/Font6x8.h:20:1: error: invalid suffix "b00000000" on integer constant
@@ -2068,14 +2068,14 @@ In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/main
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/Font6x8.h:2829:1: error: invalid suffix "b00000100" on integer constant
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/Font6x8.h:2830:1: error: invalid suffix "b11111100" on integer constant
 /Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c: In function 'main':
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:70: error: 'bufhead' undeclared (first use in this function)
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:70: error: (Each undeclared identifier is reported only once
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:70: error: for each function it appears in.)
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:70: error: 'buftail' undeclared (first use in this function)
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:72: warning: implicit declaration of function 'buf_dequeue'
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:75: warning: implicit declaration of function 'key_buf_size'
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:77: warning: implicit declaration of function 'USART_GetFlagStatus'
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:77: error: 'USART1' undeclared (first use in this function)
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:77: error: 'USART_FLAG_TXE' undeclared (first use in this function)
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:77: error: 'RESET' undeclared (first use in this function)
-/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:78: warning: implicit declaration of function 'buffer_get_key'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:42: error: 'bufhead' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:42: error: (Each undeclared identifier is reported only once
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:42: error: for each function it appears in.)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:42: error: 'buftail' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:44: warning: implicit declaration of function 'buf_dequeue'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:47: warning: implicit declaration of function 'key_buf_size'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:49: warning: implicit declaration of function 'USART_GetFlagStatus'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:49: error: 'USART1' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:49: error: 'USART_FLAG_TXE' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:49: error: 'RESET' undeclared (first use in this function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/main.c:50: warning: implicit declaration of function 'buffer_get_key'

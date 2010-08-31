@@ -1,10 +1,44 @@
 This project implements an STM32F based thin client which can send and receive data over serial, read a keyboard, and display the contents of a 480x240 framebuffer on an NTSC television.
 
-The included main.c implements a vt100 serial terminal with 80x24 characters.
+The included main.c implements a vt100 serial terminal with 80x24 characters.  Tools are also included to upload vial the STM32F's build in bootloader and an FTDI cable.
 
-DANGER:  I haven't fixed the code for the new revision pcb which will be arriving later this week.  So if somebody manages to build one of these in the next couple of days, the keyboard won't work.  It's a quick change, and will be done when I get the boards in.
+The board is designed so that the top layer can be made at home, with some easy drillable/solderable vias to a ground plane on the back side.  THe SD card slot is the only thing on the bottom of the 2 layer design, and is not important at this point (it isn't even supported in the code yet, and isn't included on the BOM).
+
+If you want to write your own NTSC display stuff using this project, all you have to do (assuming you already have the arm toolchain) is make a main.c which includes the following:
+ 
+stm32f10x.h
+stm32f10x_exti.h
+thinnerclient.h
+ 
+as well as a call to thinnerClientSetup();
+ 
+then, you have access to the following:
+ 
+frameBuffer[BUFFER_VERT_SIZE][BUFFER_LINE_LENGTH];
+uint8_t buffer_get_key()
+uint8_t buf_dequeue()
+ 
+anything written to frameBuffer appears on the screen.
+buffer_get_key and buf_dequeue retrieve bytes from the keyboard buffer and USART receive buffer, respectively.
+ 
+check out thinnerclient.h and thinnerclient.c for details.
+
+
+Known bugs:
+
+-Slight screen glitching because of serial receive and keyboard interrupts.  Fixing this may involve messing with the interrupt priorities
+-A bit of RAM can be freed by putting the font into program memory.  However, this causes a small glitch near the top of the screen when the framebuffer is refreshed every frame.
+
+******************************************************************
 
 xvsmfbg stands for X virtual shared memory frame buffer grabber. It is designed to grab frames from Xvfb, and spit them at a fixed rate to stout. 
 
 You can use it to send frames from your computer to a thinner client and display them on a TV.  The code to implement this is not currently in this repo, but it should be pretty simple to write - just read stuff out of the serial buffer and put into the frame buffer. 
+
+
+
+
+David Cranor
+cranor@media.mit.edu
+8/31/2010
 

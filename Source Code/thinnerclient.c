@@ -14,7 +14,6 @@
 
 #include "stm32f10x.h"
 #include "stm32f10x_exti.h"
-#include "platform_config.h"
 
 #include "thinnerclient.h"
 
@@ -61,7 +60,7 @@ void EXTI_Config(void);
 //Interrupt handlers
 void TIM2_IRQHandler(void);			//Sync interrupt
 void USART1_IRQHandler(void);		//USART received stuff interrupt
-void EXTI15_10_IRQHandler(void);	//Keyboard interrupt handler
+void EXTI9_5_IRQHandler(void);		//Keyboard interrupt handler
 
 //Decode a keypress
 void decode(uint8_t code);
@@ -204,7 +203,7 @@ void RCC_Config(void)
 
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 | RCC_APB1Periph_TIM4, ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_SPI1 | RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);	
-	RCC_AHBPeriphClockCmd(SPI_MASTER_DMA_CLK, ENABLE);	
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1 , ENABLE);	
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
 }
 
@@ -223,12 +222,12 @@ void GPIO_Config(void)
 	
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_15; //setting up for keyboard pin change interrupts.
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_11; //setting up for keyboard pin change interrupts.
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
-	GPIO_EXTILineConfig( GPIO_PortSourceGPIOB, GPIO_PinSource13 );  //connect exti
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_EXTILineConfig( GPIO_PortSourceGPIOA, GPIO_PinSource8 );  //connect exti
 	
 	
 	/* Configure USART1 Rx as input floating */
@@ -283,8 +282,8 @@ void TIM_Config(void)
 
 void NVIC_Config(void)
 {
-	// Enable the EXTI10_15 Interrupt for keyboard transmissions
-	NVIC_InitStructure.NVIC_IRQChannel	= EXTI15_10_IRQn;
+	// Enable the EXTI9_5 Interrupt for keyboard transmissions
+	NVIC_InitStructure.NVIC_IRQChannel	= EXTI9_5_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority	= 2;
 	NVIC_InitStructure.NVIC_IRQChannelCmd	= ENABLE;
 	
@@ -366,8 +365,8 @@ void USART_Config(void)
 
 void EXTI_Config(void)
 {
-	// Enable an interrupt on EXTI line 13 rising
-	EXTI_InitStructure.EXTI_Line		= EXTI_Line13;
+	// Enable an interrupt on EXTI line 8 rising
+	EXTI_InitStructure.EXTI_Line		= EXTI_Line8;
 	EXTI_InitStructure.EXTI_Mode		= EXTI_Mode_Interrupt;
 	EXTI_InitStructure.EXTI_Trigger	= EXTI_Trigger_Rising;
 	EXTI_InitStructure.EXTI_LineCmd	= ENABLE;
@@ -375,15 +374,15 @@ void EXTI_Config(void)
 	EXTI_Init(&EXTI_InitStructure);
 }
 
-void EXTI15_10_IRQHandler(void)
+void EXTI9_5_IRQHandler(void)
 {
 	//figure out what the keyboard is sending us
-	EXTI_ClearFlag(EXTI_Line13);
+	EXTI_ClearFlag(EXTI_Line8);
 	--bitcount;
 	if (bitcount >= 2 && bitcount <= 9)
 	{
 		scancode >>= 1;
-		if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_15))
+		if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_11))
 			scancode |= 0x80;
 	}
 	else if (bitcount == 0)

@@ -21,7 +21,6 @@
 #include "thinnerclient.h"
 
 #include "stm32f10x.h"
-#include "platform_config.h"
 
 #include <stdbool.h>
 #include <string.h>
