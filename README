@@ -2,7 +2,7 @@ This project implements an STM32F based thin client which can send and receive d
 
 The included main.c implements a vt100 serial terminal with 80x24 characters.  Tools are also included to upload vial the STM32F's build in bootloader and an FTDI cable.
 
-The board is designed so that the top layer can be made at home, with some easy drillable/solderable vias to a ground plane on the back side.  THe SD card slot is the only thing on the bottom of the 2 layer design, and is not important at this point (it isn't even supported in the code yet, and isn't included on the BOM).
+The board is designed so that the top layer can be made at home, with some easy drillable/solderable vias to a ground plane on the back side.  The SD card slot is the only thing on the bottom of the 2 layer design, and is not important at this point (it isn't even supported in the code yet, and isn't included on the BOM).
 
 If you want to write your own NTSC display stuff using this project, all you have to do (assuming you already have the arm toolchain) is make a main.c which includes the following:
  
