@@ -1,0 +1,3 @@
+This project implements an STM32F based vt100 serial terminal with 80x24 characters.  Because it has a full framebuffer, it could be easily extended to do arbitrary bitmapped graphics.
+
+Yes, the code is kind of gross.  It works, though.

@@ -1,0 +1,24 @@
+In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/video.h:21,
+                 from /Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:20:
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:19:23: error: stm32f10x.h: No such file or directory
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:20:28: error: stm32f10x_exti.h: No such file or directory
+In file included from /Users/davidcranor/Desktop/Thinner-Client/Source Code/video.h:21,
+                 from /Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:20:
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_TimeBaseStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'TIM_OCInitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'NVIC_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'SPI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'DMA_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'USART_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/thinnerclient.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_InitStructure'
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:53: error: 'USART_WordLength_8b' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:53: error: 'USART_WordLength_9b' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:61: error: 'USART_Parity_No' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:61: error: 'USART_Parity_Even' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:61: error: 'USART_Parity_Odd' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:69: error: 'USART_StopBits_1' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:69: error: 'USART_StopBits_2' undeclared here (not in a function)
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:77:5: error: invalid suffix "b10" on integer constant
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:77:11: error: invalid suffix "b01" on integer constant
+/Users/davidcranor/Desktop/Thinner-Client/Source Code/termconfig.c:77:17: error: invalid suffix "b11" on integer constant
