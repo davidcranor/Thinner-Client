@@ -1,4 +1,4 @@
-This project implements an STM32F based thin client which can send and receive data over serial, read a keyboard, and display the contents of a 480x240 framebuffer on an NTSC television.
+This project implements an STM32F based thin client which can send and receive data over serial, read a PS/2 keyboard, and display the contents of a 480x240 framebuffer on an NTSC television.
 
 The included main.c implements a vt100 serial terminal with 80x24 characters.  Tools are also included to upload vial the STM32F's build in bootloader and an FTDI cable.
 
